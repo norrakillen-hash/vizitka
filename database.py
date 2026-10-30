@@ -5,7 +5,7 @@ from pathlib import Path
 
 # Проверяем переменную окружения (её мы зададим на Netrun)
 if os.environ.get("DB_PATH"):
-    DB_PATH = os.environ.get("DB_PATH")
+    DB_PATH = os.environ.get("DB_PATH", "vizitka.db")
 else:
     # Локальный вариант для разработки
     BASE_DIR = Path(__file__).resolve().parent
