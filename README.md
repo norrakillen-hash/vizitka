@@ -1,6 +1,6 @@
-# Vizitka — сайт-визитка на FastAPI
-
 ![CI](https://github.com/norrakillen-hash/vizitka/actions/workflows/ci.yml/badge.svg)
+
+# Vizitka — сайт-визитка на FastAPI
 
 Персональный сайт-визитка с формой обратной связи, счётчиком посещений и админкой. Полностью контейнеризован, с тестами и CI.
 
