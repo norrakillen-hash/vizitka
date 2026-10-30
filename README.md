@@ -28,14 +28,14 @@
 ### Вариант 1: через Docker (рекомендую)
 
 ```bash
-docker compose up --build```
+docker compose up --build
 
 ### Вариант 2:
 
 ```python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-uvicorn main:app --reload```
+uvicorn main:app --reload
 
 ### Тесты
 
@@ -54,7 +54,7 @@ pytest --cov=. --cov-report=term-missing   # с покрытием
 ├── tests/               # pytest-тесты
 ├── Dockerfile
 ├── docker-compose.yml
-└── requirements.txt```
+└── requirements.txt
 
 ### Эндпоинты
 
@@ -62,4 +62,4 @@ pytest --cov=. --cov-report=term-missing   # с покрытием
 GET	/	Главная страница
 POST	/contact	Отправка формы связи
 GET	/admin	Список сообщений
-GET	/docs	Swagger UI```
+GET	/docs	Swagger UI
