@@ -6,7 +6,7 @@ PROFILE = {
              "Готов продать свои навыки.",
     "email": "norrakillen@yandex.ru",
     "telegram": "https://t.me/Gonare9I",
-    "github": "https://github.com/ivan",
+    "github": "https://github.com/norrakillen-hash",
     "skills": ["Python", "Flask", "FastAPI", "PostgreSQL", "Docker", "Git", "HTTP", "CI/CD",
                "Linux","GraphQL","Nginx","API","MarkDown","Kubernetes","Pytest","Apache Kafka","PyCharm", "Celery","Numpy", "REST API", "ООП", "Flask", "Django"],
     "projects": [
