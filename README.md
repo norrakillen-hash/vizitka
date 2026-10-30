@@ -28,20 +28,23 @@
 ### Вариант 1: через Docker (рекомендую)
 
 ```bash
-docker compose up --build
+docker compose up --build```
 
 ### Вариант 2:
-python -m venv .venv
+
+```python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-uvicorn main:app --reload
+uvicorn main:app --reload```
 
 ### Тесты
-pytest
+
+```pytest
 pytest --cov=. --cov-report=term-missing   # с покрытием
 
 ### Структура
-.
+
+```.
 ├── main.py              # FastAPI-приложение
 ├── profile.py           # данные профиля
 ├── database.py          # работа с SQLite
@@ -51,11 +54,12 @@ pytest --cov=. --cov-report=term-missing   # с покрытием
 ├── tests/               # pytest-тесты
 ├── Dockerfile
 ├── docker-compose.yml
-└── requirements.txt
+└── requirements.txt```
 
 ### Эндпоинты
-Метод	Путь	Описание
+
+```Метод	Путь	Описание
 GET	/	Главная страница
 POST	/contact	Отправка формы связи
 GET	/admin	Список сообщений
-GET	/docs	Swagger UI
+GET	/docs	Swagger UI```
