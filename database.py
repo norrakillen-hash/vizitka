@@ -1,12 +1,17 @@
+import os
 import sqlite3
 from contextlib import contextmanager
 from pathlib import Path
 
-# Абсолютный путь к файлу БД рядом с этим файлом
-BASE_DIR = Path(__file__).resolve().parent
-DATA_DIR = BASE_DIR / "data"
-DATA_DIR.mkdir(exist_ok=True)
-DB_PATH = DATA_DIR / "vizitka.db"
+# Проверяем переменную окружения (её мы зададим на Netrun)
+if os.environ.get("DB_PATH"):
+    DB_PATH = os.environ.get("DB_PATH")
+else:
+    # Локальный вариант для разработки
+    BASE_DIR = Path(__file__).resolve().parent
+    DATA_DIR = BASE_DIR / "data"
+    DATA_DIR.mkdir(exist_ok=True)
+    DB_PATH = DATA_DIR / "vizitka.db"
 
 
 @contextmanager
