@@ -7,5 +7,6 @@ data/
 .pytest_cache/
 .coverage
 htmlcov/
-
+templates/*.txt
+static/*.txt
 docker-compose.yml
