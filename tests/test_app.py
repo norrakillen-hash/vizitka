@@ -14,7 +14,7 @@ def test_index_contains_profile_data(client):
     """На главной есть имя, роль и ссылки из профиля."""
     response = client.get("/")
     text = response.text
-    assert "Иван Иванов" in text
+    assert "Евгений Мазняк" in text
     assert "Python Backend Developer" in text
     assert "https://github.com/ivan" in text
 
